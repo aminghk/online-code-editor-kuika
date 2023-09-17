@@ -1,70 +1,85 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Online (JS,HTML,CSS) code editor 
 
-In the project directory, you can run:
+## Overview
 
-### `npm start`
+This project is a web-based application that allows users to create, save, and reuse HTML, CSS, and JavaScript templates. It provides a user-friendly interface for coding and previewing templates, as well as saving them for future use.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## App is deployed here :
+https://kuika-oce.vercel.app/
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+1. **Auto Run**: It will render your code on the go.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. **Save Button**: Clicking the "Save" button allows users to save their templates using browser-based storage. Users can specify a template name when saving.
 
-### `npm run build`
+3. **History Dropdown**: Saved templates can be accessed and reused by selecting them from the History dropdown.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+4. **Template Loading**: When a template is selected from the History dropdown, the corresponding HTML, CSS, and JS code will be loaded into their respective fields, and the template will be rendered in the Content area.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5. **Persistent State**: User progress and templates are saved, allowing users to continue from where they left off even after a page refresh.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+6. **Minimize Button**: Clicking the "Minimize" button will trigger an animation. The HTML, CSS, and JS fields will collapse, while the Content area will expand.
 
-### `npm run eject`
+7.  **Test Variable**: There is test variable input, so if use EXACTLY {{ TEST_VARIABLE }} in your code it will render with the value you provide inside test variable input
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Open the application in your web browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Enter your HTML, CSS, and JS code in their respective fields.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. To save your template, click the "Save" button and provide a name for the template.
 
-## Learn More
+4. To load a saved template, select it from the History dropdown. The code will be loaded, and you can click "Run" to preview it.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+6. Click the "Minimize" button to toggle the display of the code fields and Content area.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+7. Use Test Variable input and give it a value then use it in your code as {{ TEST_VARIABLE }}  in many place 
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## How to Run the App
+To run the app locally, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Clone this repository to your local machine:
 
-### Making a Progressive Web App
+   ```bash
+   git clone <repository-url>
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. Navigate to the project directory:
 
-### Advanced Configuration
+   ```bash
+   cd <project-directory>
+   ```
+**Attention!** &#x1F6AB; use peer deps !!! (causes by CodeMirror)
+3. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   npm install
+   ```
 
-### Deployment
+4. Start the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   ```bash
+   npm start
+   ```
 
-### `npm run build` fails to minify
+5. Open your web browser and visit [http://localhost:3000](http://localhost:3000) to access the app.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Technologies Used
+
+This app is built with the following technologies:
+- Browser-based storage (for saving templates)
+- **React**: A JavaScript library for building user interfaces.
+- **React Custom Hooks**
+- **CodeMirror**: CodeMirror is a code editor component for the web. 
+- **Tailwind CSS**: A utility-first CSS framework for styling.
+  
+## About the Author
+
+You can find more of my projects and connect with me on my website: [aminghk.vercel.app](https://aminghk.vercel.app).
+```
